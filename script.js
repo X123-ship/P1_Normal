@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { palabraNativa: "luna", traduccion: "killa" },
         { palabraNativa: "fuego", traduccion: "nina" },
         { palabraNativa: "estrella", traduccion: "chaska" },
-        { palabraNativa: "montaña", traduucion: "urqu" },
+        { palabraNativa: "montaña", traduccion: "urqu" },
         { palabraNativa: "piedra", traduccion: "rumi" },
         { palabraNativa: "flor", traduccion: "sisa" },
         { palabraNativa: "nieve", traduccion: "rit'i" },
