@@ -118,14 +118,13 @@ document.addEventListener('DOMContentLoaded', () => {
         { palabraNativa: "reloj", traduccion: "p'unchay wachiy" },
         { palabraNativa: "medicina", traduccion: "ampuy" },
         { palabraNativa: "enfermedad", traduccion: "onqoy" },
-        { palabraNativa: "fuerza", traduccion: "kunan" },
+        { palabraNativa: "fuerza", traduccion: "kunan" }
         // Añade más palabras aquí
-       
-    
     ];
 
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase();
+        console.log("Query:", query); // Añadido para depuración
         
         resultadosUl.innerHTML = '';
 
@@ -134,8 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const resultados = diccionario.filter(item => 
-            item.palabraNativa.includes(query) || item.traduccion.includes(query)
+            item.palabraNativa.toLowerCase().includes(query) || item.traduccion.toLowerCase().includes(query)
         );
+        console.log("Resultados:", resultados); // Añadido para depuración
 
         resultados.forEach(item => {
             const li = document.createElement('li');
